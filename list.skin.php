@@ -63,10 +63,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                             $img_content = '<span class="no_image">no image</span>';
                         }
 
+                        //youtube thumbnail code
                         $youtube_thumbnail = get_youtube_thumbnail(get_youtube_id($list[$i]['wr_link1']));
                         if($youtube_thumbnail) {
                             $img_content = '<img src="'.$youtube_thumbnail.'" width="'.$board['bo_gallery_width'].'" height="'.$board['bo_gallery_height'].'">';
                         }
+                        //view code
                         echo $img_content;
                     }
                         ?>
