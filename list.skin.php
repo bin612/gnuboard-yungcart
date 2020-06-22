@@ -102,7 +102,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     </div>
 
 
-<!-- 페이지 클릭시 더보기-->
+<!-- 페이지 클릭시 더보기 query-->
 <span id="page_n" style="display:none;">2</span>
 <script type="text/javascript">
 

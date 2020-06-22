@@ -6,7 +6,7 @@ function get_youtube_id($contents)
 {
     if(!$contents)
         return false;
-
+    //정규식
     preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $contents, $match);
 
     return $match[1];
