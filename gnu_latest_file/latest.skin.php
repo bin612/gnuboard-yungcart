@@ -17,7 +17,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     for ($i=0; $i<$list_count; $i++) {  
         $list[$i]['file'] = get_file($bo_table, $list[$i]['wr_id']);
 
-		// 파일 썸네일 보여주는 변수
+		// 파일 썸네일 보여주는 변수다.
         $thumb1_src = $board_file_url . "/" . thumbnail($list[$i]['file'][0]['file'], $board_file_path, $board_file_path, $thumb_width,'', false,true);
         $thumb2_src = $board_file_url . "/" . thumbnail($list[$i]['file'][1]['file'], $board_file_path, $board_file_path, $thumb_width,'', false,true);
 
